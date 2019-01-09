@@ -38,8 +38,11 @@ namespace TeduShop.Model.Models
         public bool? HomeFlag { set; get; }
         public bool? HotFlag { set; get; }
         public bool? ViewCount { set; get; }
+        public bool Status { set; get; }
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+
+        public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }

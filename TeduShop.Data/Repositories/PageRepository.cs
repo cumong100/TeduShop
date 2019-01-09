@@ -16,7 +16,7 @@ namespace TeduShop.Data.Repositories
         }
     }
 
-    public interface IPageRepository
+    public interface IPageRepository : IRepository<Page>
     {
     }
 }

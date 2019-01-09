@@ -16,7 +16,7 @@ namespace TeduShop.Data.Repositories
         }
     }
 
-    public interface ISupportOnlineRepository
+    public interface ISupportOnlineRepository : IRepository<SupportOnline>
     {
     }
 }
